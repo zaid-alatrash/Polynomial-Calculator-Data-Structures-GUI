@@ -126,3 +126,35 @@ Polynomial-Project/
 │   └── UI Assets
 │
 └── README.md
+
+🎯 Project Objectives
+
+The main objectives of the project are to:
+
+Apply data structures in a practical application.
+Implement algorithms manually rather than relying on high-level abstractions.
+Understand mathematical expression parsing.
+Apply numerical methods to polynomial equations.
+Strengthen object-oriented programming concepts.
+Connect mathematical concepts with software implementation.
+🛠️ Technologies Used
+Java
+Java Swing
+Object-Oriented Programming
+Data Structures & Algorithms
+📷 Application
+
+The application provides a graphical user interface that allows users to interact with the implemented mathematical operations and expression-processing features.
+
+Screenshots of the application can be found in the images/ directory.
+
+📚 Academic Context
+
+This project was developed as a practical implementation of concepts related to:
+
+Data Structures
+Algorithms
+Object-Oriented Programming
+Mathematical Computation
+
+The project focuses on understanding the underlying logic and implementation of these concepts through a practical Java application.
