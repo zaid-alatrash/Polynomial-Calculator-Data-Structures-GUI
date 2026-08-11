@@ -1,32 +1,128 @@
-# 🚀 Advanced Polynomial Calculator & Expression Converter (Java Swing)
+# Polynomial & Expression Processor
 
-A robust desktop application built in Java that combines **Graphical User Interfaces (Java Swing)** with core **Data Structures and Algorithms**, designed to perform complex operations on polynomials and logical expression conversions.
+A Java-based desktop application that combines polynomial computation, mathematical expression processing, and numerical methods with custom implementations of fundamental data structures and algorithms.
 
----
-
-## 📌 Key Features & Technical Highlights
-
-* **Custom Data Structures (No Built-in Shortcuts):**
-  * **Linked List (`Node`, `PolynomialCalculator`):** Polynomials are dynamically represented, stored, and manipulated using linked lists to handle arbitrary degrees and sparse terms efficiently.
-  * **Custom Stack (`Stack`):** Built from scratch using an `ArrayList` without relying on Java's built-in `Stack` class, used specifically for parsing and expression conversions.
-* **Algebraic Operations on Polynomials:**
-  * Addition, Subtraction, Multiplication, and **Polynomial Division** (returning both Quotient and Remainder).
-  * Evaluation for a given value of $x$ (`compensationX`).
-  * Automatic Derivation and **Root Finding** (handling linear, quadratic equations via Discriminant, and higher-degree polynomials using numerical methods like **Newton-Raphson** and integer root theorems).
-* **Expression Conversion:**
-  * Converts mathematical expressions between **Infix, Postfix, and Prefix** notations using custom parsing logic and operator precedence.
-* **Custom Email Validation (Strict Constraints):**
-  * Implemented a manual validation algorithm for user login *without* using Regular Expressions (`Regex`), strictly parsing string indexes, `@` positions, and dot sequences.
-* **Graphical User Interface (GUI):**
-  * Built cleanly using Java Swing (`JFrame`, `JTextField`, `JButton`, `JComboBox`, and custom event listeners).
+The project provides an interactive GUI for performing polynomial operations, converting mathematical expressions between different notations, and solving polynomial equations using numerical methods.
 
 ---
 
-## 📂 Project Structure
-- `src/Main.java`: Entry point of the application.
-- `src/LoginEmail.java`: Authentication window with custom string-based email validation.
-- `src/TheCalculator.java`: Main dashboard handling GUI actions, formatting, and triggers.
-- `src/PolynomialCalculator.java`: Core logic for polynomial math, calculus, and root finding.
-- `src/InPostPreFix.java`: Infix/Postfix/Prefix conversion engine.
-- `src/Stack.java`: Custom Stack implementation.
-- `src/Node.java`: Linked list node structure for polynomial terms.
+## 📌 Overview
+
+The application was developed to demonstrate the practical implementation of data structures, algorithms, and object-oriented programming concepts in Java.
+
+Instead of relying on high-level collection frameworks or regular expressions, core structures and processing logic were implemented manually to provide a deeper understanding of how these mechanisms work internally.
+
+The project combines two main areas:
+
+- Polynomial manipulation and mathematical operations.
+- Mathematical expression parsing and notation conversion.
+
+---
+
+## ✨ Features
+
+### Polynomial Operations
+
+The application supports:
+
+- Addition
+- Subtraction
+- Multiplication
+- Polynomial Long Division
+- Differentiation
+- Root Finding
+- Quotient and Remainder calculation
+
+### Expression Processing
+
+The application can convert mathematical expressions between:
+
+- Infix
+- Postfix
+- Prefix
+
+The conversion process is handled using a custom Stack implementation and manually defined operator precedence.
+
+### Numerical Methods
+
+Polynomial roots can be approximated using numerical techniques such as:
+
+- Newton-Raphson Method
+- Discriminant-based calculations
+
+### Input Validation
+
+The project also includes custom email validation without using Regular Expressions.
+
+The validation logic checks the structure of the email using character positions and conditions such as:
+
+- `@` placement
+- `.`
+- Domain structure
+- Domain length
+
+---
+
+## 🧩 Data Structures
+
+The project implements fundamental data structures from scratch.
+
+### Linked List
+
+A custom Linked List structure is used to represent polynomial terms.
+
+Each term contains:
+
+- Coefficient
+- Exponent
+- Reference to the next term
+
+This allows polynomial terms to be dynamically managed.
+
+### Stack
+
+A custom array-based Stack is used primarily during mathematical expression conversion.
+
+It supports operations such as:
+
+- `push()`
+- `pop()`
+- `peek()`
+- `isEmpty()`
+
+The Stack is responsible for helping manage operators and their precedence during Infix, Postfix, and Prefix conversion.
+
+---
+
+## ⚙️ Main Components
+
+| Component | Responsibility |
+|---|---|
+| `Main.java` | Application entry point |
+| `LoginEmail.java` | Login interface and email validation |
+| `TheCalculator.java` | Main calculator interface |
+| `PolynomialCalculator.java` | Polynomial operations and calculus |
+| `InPostPreFix.java` | Expression parsing and notation conversion |
+| `Stack.java` | Custom Stack implementation |
+| `Node.java` | Linked List node structure |
+
+---
+
+## 🏗️ Project Structure
+
+```text
+Polynomial-Project/
+│
+├── src/
+│   ├── Main.java
+│   ├── LoginEmail.java
+│   ├── TheCalculator.java
+│   ├── PolynomialCalculator.java
+│   ├── InPostPreFix.java
+│   ├── Stack.java
+│   └── Node.java
+│
+├── images/
+│   └── UI Assets
+│
+└── README.md
